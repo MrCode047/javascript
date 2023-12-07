@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+        }
+
+        input {
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Me diz de onde é :</h1>
+    País: <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Entrer" onclick="onde()">
+    <div id="res"></div>
+
+    <script>
+        let txpaís = document.getElementById("txtpaís")
+        let res = document.getElementById("res")
+
+        function onde() {
+            let país = txtpaís.value
+            res.innerHTML = `<p>Seu país é <strong>${país}</strong></p>`
+            if (país == "França") {
+                res.innerHTML += "<p><strong>Você é Francês!</strong></p>"
+            } else {
+                res.innerHTML += "<p><strong>Você é Estrangeiro!</strong></p>"
+            }
+        }
+    </script>
+</body>
+</html>
