@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escolha e escreve um mês do ano</h1>
+    Mês: <input type="text" name="txtmês" id="txtmes">
+    <input type="button" value="Enter" onclick="goodmes()">
+    <div id="res"></div>
+
+    <script>
+        let txmês = document.getElementById("txtmes")
+        let res = document.getElementById("res")
+
+        function goodmes() {
+            let mes = document.getElementById("txtmes").value
+            let res = document.getElementById("res")
+
+            res.innerHTML = `<p>Você escolheu <strong>${mes}</strong></p>`
+            if (mes === "Janeiro" || mes === "Fevereiro" || mes === "Março") {
+                res.innerHTML += "<p><strong>Acertou</strong></p>"
+            } else {
+                res.innerHTML += "<p>Perdeu. Continua até acertar ...</p>"
+        }
+    }
+    </script>
+</body>
+</html>
