@@ -3,12 +3,17 @@ function contar() {
     let fim = document.getElementById("ifim")
     let passo = document.getElementById("ipass")
     let res = document.querySelector("div#res")
-    
+      
 }
-inicio = 1
+  for(inicio == inicio;fim == fim;passo++) {
+        res.innerHTML = `Contando ${res}`
+      }
+
+
+/* inicio = 1
 passo = 0
  
     while (inicio == 1) {
         passo++
         console.log(`Passo ${passo}`)
-    }
+    } */
